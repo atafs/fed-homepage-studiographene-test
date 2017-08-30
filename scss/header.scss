@@ -25,11 +25,9 @@ header {
   flex-direction: column;
   background-color: $background-color-base;
   min-height: 100vh;
-  margin: 0;  
+  margin: 0;
 
   background-image: url(img/bg-pic.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .header-nav-center li,
@@ -76,7 +74,7 @@ header {
 
 .header-nav-center {
   flex: 6 1 0%;
-  
+
 }
 
 .main {

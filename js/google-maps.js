@@ -11,12 +11,12 @@ function init() {
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(51.521513, -0.086189), // New York
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"lightness":"-100"},{"color":"#ffdac9"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffcab1"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ffcab1"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#92e1dd"}]}]
     };
 
-    // Get the HTML DOM element that will contain your map 
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
@@ -29,4 +29,6 @@ function init() {
         map: map,
         title: 'Studio Graphene!!'
     });
+
+    $('#main').stellar();
 }
