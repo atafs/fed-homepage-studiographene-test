@@ -55,12 +55,15 @@
         border: 2px solid #333;
         background-color: #333;
         color: #ffdac9;
+        padding: 7px 20px 0 20px;
         text-align: center; }
       .section-with-us .btn-send a:hover, .section-with-us .btn-send a:active {
         border: 2px solid #333;
         background-color: #ffdac9;
         color: #333; }
   .section-with-us p {
+    font-family: Gill Sans, sans-serif;
+    color: #595959;
     font-size: 15px; }
   .section-with-us h1 {
     font-family: DIN Condensed, sans-serif;
@@ -90,7 +93,8 @@ input,
 select,
 textarea,
 body * {
-  font-family: 'Roboto', sans-serif; }
+  font-family: DIN Condensed, sans-serif;
+}
   body::after, body::before,
   input::after,
   input::before,

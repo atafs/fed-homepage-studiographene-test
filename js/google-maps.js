@@ -30,5 +30,4 @@ function init() {
         title: 'Studio Graphene!!'
     });
 
-    $('#main').stellar();
 }

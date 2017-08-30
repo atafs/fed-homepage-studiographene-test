@@ -1,0 +1,167 @@
+/* ------------------------------------------ */
+/* DEV MIXINS */
+/* ------------------------------------------ */
+/*  ------------------------------------------- */
+/* GENERAL SETUP
+/*  ------------------------------------------- */
+* {
+  /* box_model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*  ------------------------------------------- */
+/* BOX MODEL (box_model)
+/*  ------------------------------------------- */
+.section-our-menu {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
+  width: auto;
+  height: auto;
+  position: relative;
+  background-color: #f8f8f8; }
+  .section-our-menu .box {
+    
+    padding: 80px 80px; }
+    .section-our-menu .box .card-our-menu, .section-our-menu .box .card-our-menu-empty {
+      margin: 1px 12px 15px 15px;
+      padding: 15px 0 15px 40px; }
+    .section-our-menu .box .card-our-menu-0 {
+      margin: 0;
+      padding: 0; }
+    .section-our-menu .box .column {
+      padding-right: 5px; }
+  .section-our-menu .row {
+    display: flex; }
+  .section-our-menu .column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #cecece;
+    align-items: stretch; }
+    .section-our-menu .column:last-child {
+      border: 0; }
+
+    .card-our-menu.our-menu-1 {
+      margin-top: 140px !important; }
+    .card-our-menu.our-menu-2 {
+      margin-top: 360px !important; }
+    .card-our-menu.our-menu-3 {
+      margin-top: 240px !important; }
+    .card-our-menu.our-menu-4 {
+      margin-top: 200px !important; }
+
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+.card-our-menu, .card-our-menu-0 {
+  flex: 1 1 25%;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-family: DIN Condensed, sans-serif;
+  color: #333;
+  text-align:left;
+  padding-bottom: 15px;
+  border-radius: 2px; }
+  .card-our-menu h3, .card-our-menu-0 h3 {
+    font-size: 14px;
+    text-transform: uppercase; }
+  .card-our-menu p, .card-our-menu-0 p {
+    font-family: Gill Sans, sans-serif;
+    font-size: 15px;
+    color: #595959;
+    /* box_model */
+    margin: 10px 0 20px 0; }
+  .card-our-menu a, .card-our-menu-0 a {
+    font-size: 12px;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; }
+  .card-our-menu a:link,
+  .card-our-menu a:visited, .card-our-menu-0 a:link,
+  .card-our-menu-0 a:visited {
+    border: 3px solid #ffdac9;
+    color: #333;
+    font-weight: bold;
+    /* box_model */
+    padding: 8px; }
+  .card-our-menu a:hover,
+  .card-our-menu a:active, .card-our-menu-0 a:hover,
+  .card-our-menu-0 a:active {
+    background-color: #ffdac9; }
+
+/* absolute position */
+.section-our-menu h1 {
+  font-family: DIN Condensed, sans-serif;
+  font-size: 62px;
+  color: #000;
+  text-transform: uppercase;
+  color: #333;
+  z-index: 2;
+  position: absolute;
+  left: 40%; }
+  .section-our-menu h1.header-our-menu-1 {
+    position: absolute;
+    top: 140px;
+    left: 115px; }
+  .section-our-menu h1.header-our-menu-2 {
+    position: absolute;
+    text-align: left;
+    top: 265px;
+    left: 377px; }
+  .section-our-menu h1.header-our-menu-3 {
+    position: absolute;
+    text-align: left;
+    top: 225px;
+    left: 675px; }
+  .section-our-menu h1.header-our-menu-4 {
+    position: absolute;
+    text-align: left;
+    top: 170px;
+    left: 975px; }
+
+.header-our-menu-a {
+  font-family: DIN Condensed, sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  color: #333;
+  position: absolute;
+  top: 70px;
+  left: 44%;
+  text-decoration: none;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  z-index: 1; }
+  .header-our-menu-a:link, .header-our-menu-a:visited {
+    background-color: #ffdac9;
+    border: 2px solid #ffdac9;
+    font-weight: bold;
+    /* box_model */
+    margin-top: 65px;
+    padding: 8px; }
+  .header-our-menu-a:hover, .header-our-menu-a:active {
+    border: 2px solid #ffdac9;
+    background-color: #f8f8f8; }
+
+.header-our-menu-main {
+  width: 200px;
+  height: 8px;
+  background: #ffdac9;
+  position: absolute;
+  top: 102px;
+  left: 37%; }
+
+/* ------------------------------------------ */
+/* ANIMATIONS */
+/* ------------------------------------------ */
+.js--wp-1-our-menu,
+.js--wp-2-our-menu,
+.js--wp-3-our-menu,
+.js--wp-4-our-menu {
+  opacity: 0;
+  animation-duration: 1.4s; }
+
+.js--wp-1-our-menu.animated,
+.js--wp-2-our-menu.animated,
+.js--wp-3-our-menu.animated,
+.js--wp-4-our-menu.animated {
+  opacity: 1; }
+
+/*# sourceMappingURL=cards-our-menu-parallax.css.map */
